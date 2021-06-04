@@ -1,5 +1,4 @@
-Quassel IRC
-===============
+# Quassel IRC
 
 [![Quassel CI Build Status][ci-badge]][ci-status-page]
 
@@ -10,22 +9,28 @@ IRC client such as WeeChat, but graphical.
 
 Not only do we aim to bring a pleasurable, comfortable chatting experience to
 all major platforms, but it's free - as in beer and as in speech, since we
-distribute Quassel under [the GPL](https://www.gnu.org/licenses/gpl.html), and
-you are welcome to download and see for yourself!
+distribute Quassel under [the GPL][gpl], and you are welcome to download and
+see for yourself!
 
 ## Release notes
+
 You can find the current release notes on the [Quassel IRC homepage][web-home],
 as well as in this repository's [`ChangeLog`][repo-changelog].
 
 ## Downloading
-Official, stable downloads are provided on the [Quassel IRC download page](https://quassel-irc.org/downloads).
 
-Untested, automated builds are available [for Windows](https://nightly.link/quassel/quassel/workflows/main/master/Windows.zip ) and [for macOS](https://nightly.link/quassel/quassel/workflows/main/master/macOS.zip ).  More details at [the nightly.link page](https://nightly.link/quassel/quassel/workflows/main/master ), by `oprypin`.  Or, if you are logged in to GitHub, pick any build from the [GitHub Actions tab][ci-status-page].
+Official, stable downloads are provided on the [Quassel IRC download page][downloads].
 
-Unofficial builds and testing versions are [contributed by several community members](https://bugs.quassel-irc.org/projects/quassel-irc/wiki#Unofficial-builds).
+Untested, automated builds are available [for Windows][nightly-windows] and
+[for macOS][nightly-macos].  More details at [the nightly.link page][nightly-link],
+by `oprypin`.  Or, if you are logged in to GitHub, pick any build from the
+[GitHub Actions tab][ci-status-page].
+
+Unofficial builds and testing versions are [contributed by several community members][unofficial-builds].
 
 ## Quick reference
-We recommend reading the [getting started guide on the wiki](https://bugs.quassel-irc.org/projects/quassel-irc/wiki#Getting-started),
+
+We recommend reading the [getting started guide on the wiki][getting-started],
 but in a pinch, these steps will do.
 
 On first run of the Quassel core, it will wait for a client to connect
@@ -33,6 +38,7 @@ and present a wizard that will allow you to create the database and one admin
 user for the core-side storage.
 
 Once you've set up Quassel, you may:
+
 * Add more users: `quasselcore --add-user`
 * Change the password of an existing user: `quasselcore --change-userpass=username`
 * See all available options: `quasselcore --help`
@@ -40,7 +46,7 @@ Once you've set up Quassel, you may:
 On some systems, you may need to specify `--configdir`, e.g.
 `quasselcore --configdir=/var/lib/quassel [command]`.
 
-To learn more, see [the Quassel project wiki](https://bugs.quassel-irc.org/projects/quassel-irc/wiki) for in-depth
+To learn more, see [the Quassel project wiki][quassel-wiki] for in-depth
 documentation.
 
 ## Getting involved
@@ -54,9 +60,10 @@ you can use [Freenode's webchat][help-freenode].
 We always welcome new users in our channels!
 
 You can learn more and reach out to us in several ways:
+
 * [Visit our homepage][web-home]
-* [Submit and browse issues on the bugtracker](https://bugs.quassel-irc.org)
-  * GitHub issues are not used, but [pull requests](https://github.com/quassel/quassel/pull/new/master) are accepted!
+* [Submit and browse issues on the bugtracker][bugs]
+  * GitHub issues are not used, but [pull requests][github-pr] are accepted!
 * [Email the dev team - devel@quassel-irc.org][dev-email]
 
 Thanks for reading,
@@ -69,3 +76,13 @@ Thanks for reading,
 [repo-changelog]: ChangeLog
 [ci-badge]: https://github.com/quassel/quassel/workflows/Quassel%20CI/badge.svg?branch=master
 [ci-status-page]: https://github.com/quassel/quassel/actions?query=branch%3Amaster
+[gpl]: https://www.gnu.org/licenses/gpl.html
+[downloads]: https://quassel-irc.org/downloads
+[nightly-windows]: https://nightly.link/quassel/quassel/workflows/main/master/Windows.zip
+[nightly-macos]: https://nightly.link/quassel/quassel/workflows/main/master/macOS.zip
+[nightly-link]: https://nightly.link/quassel/quassel/workflows/main/master
+[getting-started]: https://bugs.quassel-irc.org/projects/quassel-irc/wiki#Getting-started
+[unofficial-builds]: https://bugs.quassel-irc.org/projects/quassel-irc/wiki#Unofficial-builds
+[quassel-wiki]: https://bugs.quassel-irc.org/projects/quassel-irc/wiki
+[github-pr]: https://github.com/quassel/quassel/pull/new/master
+[bugs]: https://bugs.quassel-irc.org
